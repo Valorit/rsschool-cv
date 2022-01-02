@@ -1,1 +1,1 @@
-# rsschool-cv
+https://valorit.github.io/rsschool-cv/cv
