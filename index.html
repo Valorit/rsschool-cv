@@ -4,9 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
+    <title>Rsschool-cv-html</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+    />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p>init html</p>
+    <div class="container">
+      <header>
+        <h1 class="profile-name">Skakun Valery Anatolyevich</h1>
+        <h4 class="profile-position">(Front-end Developer)</h4>
+      </header>
+
+      <main class="column">
+        <section>
+          <h2>Contact information:</h2>
+          <div class="row contacts-box">
+            <div class="item">
+              <ul class="contacts">
+                <li>
+                  <img src="./assets/img/location.png" alt="location" />
+                  <p>Zhytomyr (Ukraine)</p>
+                </li>
+                <li>
+                  <img src="./assets/img/add-contact.png" alt="phone" />
+                  <p>+380734990058</p>
+                </li>
+                <li>
+                  <img src="./assets/img/linkedin.png" alt="linkedin" />
+                  <a
+                    href="https://www.linkedin.com/in/valeriy-skakun-10242a128/"
+                    target="_blank"
+                    class="link"
+                    >Linkedin</a
+                  >
+                </li>
+                <li>
+                  <img src="./assets/img/facebook.png" alt="facebook" />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100035702885499"
+                    target="_blank"
+                    class="link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <img src="./assets/img/discord.png" alt="discord" />
+                  <p>Valor#9419</p>
+                </li>
+                <li>
+                  <img src="./assets/img/email.png" alt="email" />
+                  <p>valor22087@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="item photo">
+              <img
+                src="./assets/photo/DSC_6019_600x600.jpg"
+                alt="photo"
+                width="200px"
+                height="200px"
+                class="profile-photo"
+              />
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>About Myself:</h2>
+          <p class="about">
+            I have been actively studying web technologies for two years. At the
+            moment I am learning React, NodeJS, Docker, PostgreSQL. I apply my
+            knowledge to develop a minimum viable product. In my free time I
+            take RS School courses to improve my qualifications.
+          </p>
+          <p></p>
+        </section>
+        <section>
+          <h2>Skills and Proficiency:</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>ReactRouter</li>
+            <li>Material-UI</li>
+            <li>HTML5</li>
+            <li>CSS3 Flexbox</li>
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+            <li>Progressive Web Apps</li>
+            <li>Firebase</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Code example:</h2>
+          <i
+            >The function allows you to cut text if it exceeds a specified line
+            length and insert an ellipsis instead.</i
+          >
+          <pre><code class="language-js">
+          function truncateText(text, maxLength) {
+            return text.length < maxLength ? text : text.substr(0, maxLength) + '…';
+          }
+        </code></pre>
+          <pre><code class="language-js">
+          console.log(
+            truncateText('This text must be truncated if it exceeds 27 characters', 27)
+          ); //result => 'This text must be truncated…'
+        </code></pre>
+        </section>
+        <section>
+          <h2>Courses:</h2>
+          <ul>
+            <li>
+              RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Languages:</h2>
+          <ul>
+            <li>
+              <h4 class="language">English <span>- Intermediate</span></h4>
+            </li>
+            <li>
+              <h4 class="language">Ukrainian <span>- Native</span></h4>
+            </li>
+            <li>
+              <h4 class="language">Russian <span>- Proficiency</span></h4>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="row footer-block">
+        <hr />
+        <div class="footer-item">
+          <a
+            href="https://github.com/Valorit"
+            target="_blank"
+            class="link footer-github"
+          >
+            <img
+              src="./assets/img/github-sign.png"
+              alt="Github Icon"
+              width="30px"
+              height="30px"
+              class="github-icon"
+            />
+            <p>My GitHub</p>
+          </a>
+        </div>
+        <div class="footer-item footer-year">
+          <h4>© 2022</h4>
+        </div>
+        <div class="footer-item footer-rsschool">
+          <a class="link" href="https://rs.school/js-stage0/" target="_blank">
+            <img
+              src="./assets/img/rs_school_js.svg"
+              alt="Rsschool Icon"
+              width="70px"
+              height="45px"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
