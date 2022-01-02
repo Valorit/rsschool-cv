@@ -1,3 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  margin-top: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.profile-name {
+  text-align: center;
+}
+.profile-position {
+  text-align: center;
+}
+
+.contacts-box {
+  justify-content: space-between;
+}
+
+.contacts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  margin: 5px 5px;
+}
+
+.contacts p {
+  margin: 0px;
+}
+
+.contacts img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.profile-photo {
+  border-radius: 15px;
+}
+
+.about,
+.about i {
+  text-align: justify;
+}
+
+.language span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-block {
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+
+.footer-github {
+  display: flex;
+  align-items: center;
+}
+
+.github-icon {
+  margin-right: 10px;
+}
+.footer-year {
+  justify-content: center;
+}
+.footer-rsschool {
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .photo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-photo {
+    margin-top: 25px;
+  }
 }
