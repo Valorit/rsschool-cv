@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -119,6 +120,75 @@ section {
 }
 .footer-rsschool {
   justify-content: flex-end;
+}
+
+.navigation {
+  position: fixed;
+  display: flex;
+  top: calc(50% - 150px);
+  right: 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  width: 180px;
+  background-color: #fff;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.navigation-hide {
+  right: -180px;
+}
+
+.navigation-box {
+  position: relative;
+}
+
+.navigation-box ul {
+  padding: 5px;
+}
+
+.navigation-box li {
+  list-style: none;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.navigation-box li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.navigation-box a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  color: #000;
+}
+
+.navigation-toggle {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: -30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  width: 30px;
+  height: 80px;
+  background-color: #fff;
+  user-select: none;
+}
+
+.navigation-toggle:hover {
+  cursor: pointer;
+}
+
+.navigation-toggle-img {
+  height: 30px;
 }
 
 @media (max-width: 600px) {
